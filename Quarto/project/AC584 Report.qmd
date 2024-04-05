@@ -1,0 +1,194 @@
+---
+title: "AC584 Report"
+subtitle: "Second Semester R Studio Assignment"
+author: "Cianan Markey"
+date: "2024-04-04"
+html: 
+toc: true 
+theme: sketchy
+backgroundcolor: "lightgrey"
+
+execute: 
+  echo: false
+  warning: false
+  message: false
+editor_options: 
+  chunk_output_type: console
+---
+```{r}
+#| label: setup
+#| include: false
+
+# libraries
+library(tidyverse)
+library(plotly)
+library(scales)
+
+# data
+unicef_indicator_1 <- read_csv("unicef_indicator_1.csv")
+unicef_metadata <- read_csv("unicef_metadata.csv")
+unicef_indicator_2 <- read_csv("unicef_indicator_2.csv")
+continents <- read_csv("continents.csv")
+
+```
+## Introduction ##
+
+Welcome to my report. I have created this report to investigate the data provided to me from **Unicef** regarding Anaemia infection rates and more general statistics like *GDP, Life Expectancy and Population*.
+
+## Anaemia Infection Rates Map ##
+This Map shows us the anaemia infection rates of the given countries.
+
+<span style="color: red;"> I utilised the scale fill gradient code in order to enable me to create a gradient which highlights the change in the infection rates in the different countries
+
+[This **link** is where I have received my datasets from](https://data.unicef.org/dv_index/)
+
+
+[There is **more information** about my indicator (anaemia) and many other ***indicators*** available here on this website](https://data.unicef.org/indicator-profile/)
+
+```{r}
+
+# MAP #
+
+map_world <- map_data("world")
+
+color_scale <- scale_fill_gradientn(
+  colors = c("darkred", "red", "coral"),  
+  values = rescale(c(0, 40, 60, 85)),  
+  limits = c(0, 85),  
+  name = "Indicator"
+)
+
+map_data_join <- full_join(unicef_indicator_1, map_world, by = c("country" = "region"))
+
+map_Object <- ggplot(map_data_join, aes(long, lat, group = group, fill = obs_value)) +
+  geom_polygon(color = "black") +
+  color_scale + 
+  labs(x = "", y = "", title = "Anaemia Infection Rates") +
+  theme(text = element_text(family = "Times New Roman"))
+
+ggplotly(map_Object)
+```
+^1: If you hover over one country it will tell you the infection rate for that country.
+
+
+## Evolution of Life Expectancy Per Continent ##
+This time series visualisation enables us to see the progression in life expectancy in the different continents over decades.
+
+Each **continent** is linked to a *colour* as follows:
+ <span style="color: blue;"> Asia,<span style="color: yellow;"> Europe, <span style="color: red;"> Africa,<span style="color: orange;"> Americas,<span style="color: green;"> Oceania
+```{r}
+# Time Series #
+
+data_join_Continents <- full_join(continents, unicef_metadata, by = join_by(country))
+
+timeseries_plot_1 <- data_join_Continents %>%
+  na.omit() %>%
+  ggplot() +
+  aes(time_period, lifeExp, group = country, color = continent) +
+  geom_line() +
+  scale_color_manual(values = c("Asia" = "blue", 
+                                "Europe" = "yellow",
+                                "Africa" = "red",
+                                "Americas" ="orange",
+                                "Oceania" = "green")) + 
+  labs(x = "Life Expectancy", y = "Year", title = "Evolution of Life Expectancy") +
+  theme_classic() + 
+  theme(text = element_text(family = "Times New Roman"))
+
+
+ggplotly(timeseries_plot_1)
+```
+<span style="color: #FFFF00;"> ^1: If you click on the continent in the legend it will remove that continent from the visualisation
+
+<span style="color: #FF00FF;"> ^2: If you double click on one continent in the legend it will highlight that continent.
+
+
+## Continental Scatter Plots ##
+***This visualisation enables us to see the relationship between GDP and Life Expectancy in each continent***
+
+<span style="text-decoration: underline;">Benefits of this Visualisation</span>
+
+- Continental Comparison
+- Colour Co-Ordination with Time Series
+- Use of Facet Wrap
+
+```{r}
+# Scatter Plot #
+
+data_scatterplot_1 <- data_join_Continents %>%
+  na.omit()%>%
+  ggplot() +
+  aes(gdp, lifeExp, color = continent, size = population) +
+  geom_point(alpha = 0.5) +
+  facet_wrap(~ continent) +
+  scale_color_manual(values = c("Asia" = "blue", 
+                                "Europe" = "yellow",
+                                "Africa" = "red",
+                                "Americas" ="orange",
+                                "Oceania" = "green")) +
+  scale_x_continuous(limits = c(0, 75000), breaks = c(25000, 50000, 75000), labels = scales::unit_format(unit = "K", scale = 0.001)) + 
+  labs(x = "GDP per Capita in USD", y = "Life Expectancy at Birth", title = "Continental Correlation Between Life Expectancy and GDP") +
+  theme_light() + 
+  theme(text = element_text(family = "Times New Roman"))
+
+ggplotly(data_scatterplot_1)
+```
+
+## Population Bar Charts 1961 v 2021 ##
+
+*These bar charts enable us to see the growth in population of the five continents over the 60 year period from 1961-2021*
+
+This first graph shows us the **total population** per continent in <span style="color: green;"> ***1961***
+
+```{r}
+
+# Bar Chart 1961 #
+
+data_1961 <- subset(data_join_Continents, time_period == 1961)
+
+total_population_1961 <- aggregate(population ~ continent, data = data_1961, FUN = sum)
+
+BarChart_1961 <- ggplot(total_population_1961, aes(x = reorder(continent,population), y = population, fill = continent)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Total Population by Continent in 1961",
+       x = "Continent", y = "Total Population")+
+  scale_y_continuous(labels = scales::comma)+
+  theme_classic() + 
+  theme(text = element_text(family = "Times New Roman"))
+
+ggplotly(BarChart_1961)
+
+```
+
+```{r}
+
+# Bar Chart 2021 #
+
+data_2021 <- subset(data_join_Continents, time_period == 2021)
+
+total_population <- aggregate(population ~ continent, data = data_2021, FUN = sum)
+
+BarChart_2021 <- ggplot(total_population, aes(x = reorder(continent,population), y = population, fill = continent)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Total Population by Continent in 2021",
+       x = "Continent", y = "Total Population")+
+  scale_y_continuous(labels = scales::comma)+
+  theme_classic() + 
+  theme(text = element_text(family = "Times New Roman"))
+
+ggplotly(BarChart_2021)
+
+```
+**Notice** how the Y-axis has ***drastically*** increased in value over the 60 years. 
+
+This second graph shows us the **total population** per continent in <span style="color: blue;"> ***2021***
+
+Similarly to the first graph, the **continent** with the highest population is <span style="color: Green;"> Asia.
+
+However the **continent** which has seen the biggest increase in their population is <span style="color: Red;"> Africa.
+
+
+## Conclusion ##
+
+<span style="color: #FFA500;"> Thank you for taking the time to engage with my report. <span style="color: #00FF00;"> I hope you found it <span style="color: #00FFFF;"> engaging and interesting. 
+

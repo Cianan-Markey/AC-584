@@ -1,0 +1,93 @@
+country,alpha_2_code,alpha_3_code,numeric_code,indicator,time_period,obs_value,sex,unit_multiplier,unit_of_measure,observation_status,observation_confidentaility,time_period_activity_related_to_when_the_data_are_collected,current_age
+Albania,AL,ALB,8,adolescent girls with any anaemia,2008,17.9,Female,,%,,,,15 to 19 years old
+Albania,AL,ALB,8,adolescent girls with any anaemia,2017,17.6,Female,,%,,,,15 to 19 years old
+Armenia,AM,ARM,51,adolescent girls with any anaemia,2005,21.4,Female,,%,,,,15 to 19 years old
+Armenia,AM,ARM,51,adolescent girls with any anaemia,2016,17.2,Female,,%,,,,15 to 19 years old
+Azerbaijan,AZ,AZE,31,adolescent girls with any anaemia,2006,30.5,Female,,%,,,,15 to 19 years old
+Bangladesh,BD,BGD,50,adolescent girls with any anaemia,2011,42.3,Female,,%,,,,15 to 19 years old
+Benin,BJ,BEN,204,adolescent girls with any anaemia,2012,41.6,Female,,%,,,,15 to 19 years old
+Benin,BJ,BEN,204,adolescent girls with any anaemia,2017,57.4,Female,,%,,,,15 to 19 years old
+"Bolivia, Plurinational State of",BO,BOL,68,adolescent girls with any anaemia,2003,30.9,Female,,%,,,,15 to 19 years old
+Bolivia,BO,BOL,68,adolescent girls with any anaemia,2003,30.9,Female,,%,,,,15 to 19 years old
+"Bolivia, Plurinational State of",BO,BOL,68,adolescent girls with any anaemia,2008,37.7,Female,,%,,,,15 to 19 years old
+Bolivia,BO,BOL,68,adolescent girls with any anaemia,2008,37.7,Female,,%,,,,15 to 19 years old
+Burkina Faso,BF,BFA,854,adolescent girls with any anaemia,2003,51.9,Female,,%,,,,15 to 19 years old
+Burkina Faso,BF,BFA,854,adolescent girls with any anaemia,2010,47.9,Female,,%,,,,15 to 19 years old
+Burundi,BI,BDI,108,adolescent girls with any anaemia,2010,16.3,Female,,%,,,,15 to 19 years old
+Burundi,BI,BDI,108,adolescent girls with any anaemia,2016,35.9,Female,,%,,,,15 to 19 years old
+Cambodia,KH,KHM,116,adolescent girls with any anaemia,2010,47.8,Female,,%,,,,15 to 19 years old
+Cambodia,KH,KHM,116,adolescent girls with any anaemia,2014,49.4,Female,,%,,,,15 to 19 years old
+Cameroon,CM,CMR,120,adolescent girls with any anaemia,2011,39.7,Female,,%,,,,15 to 19 years old
+Cameroon,CM,CMR,120,adolescent girls with any anaemia,2018,41.7,Female,,%,,,,15 to 19 years old
+Cayman Islands,KY,CYM,136,adolescent girls with any anaemia,2012,34.5,Female,,%,,,,15 to 19 years old
+Congo,CG,COG,178,adolescent girls with any anaemia,2005,56.5,Female,,%,,,,15 to 19 years old
+Congo,CG,COG,178,adolescent girls with any anaemia,2011,55.1,Female,,%,,,,15 to 19 years old
+Côte d'Ivoire,CI,CIV,384,adolescent girls with any anaemia,2012,53.9,Female,,%,,,,15 to 19 years old
+Ivory Coast,CI,CIV,384,adolescent girls with any anaemia,2012,53.9,Female,,%,,,,15 to 19 years old
+"Congo, the Democratic Republic of the",CD,COD,180,adolescent girls with any anaemia,2007,48.4,Female,,%,,,,15 to 19 years old
+"Congo, the Democratic Republic of the",CD,COD,180,adolescent girls with any anaemia,2013,40.1,Female,,%,,,,15 to 19 years old
+Egypt,EG,EGY,818,adolescent girls with any anaemia,2005,44.9,Female,,%,,,,15 to 19 years old
+Egypt,EG,EGY,818,adolescent girls with any anaemia,2014,24.8,Female,,%,,,,15 to 19 years old
+Swaziland,SZ,SWZ,748,adolescent girls with any anaemia,2006,28.2,Female,,%,,,,15 to 19 years old
+Ethiopia,ET,ETH,231,adolescent girls with any anaemia,2011,13.4,Female,,%,,,,15 to 19 years old
+Ethiopia,ET,ETH,231,adolescent girls with any anaemia,2016,19.9,Female,,%,,,,15 to 19 years old
+Gabon,GA,GAB,266,adolescent girls with any anaemia,2012,63.5,Female,,%,,,,15 to 19 years old
+Gambia,GM,GMB,270,adolescent girls with any anaemia,2013,58.2,Female,,%,,,,15 to 19 years old
+Gambia,GM,GMB,270,adolescent girls with any anaemia,2019,43.5,Female,,%,,,,15 to 19 years old
+Ghana,GH,GHA,288,adolescent girls with any anaemia,2008,62.9,Female,,%,,,,15 to 19 years old
+Ghana,GH,GHA,288,adolescent girls with any anaemia,2014,47.7,Female,,%,,,,15 to 19 years old
+Guam,GU,GUM,316,adolescent girls with any anaemia,2015,11.7,Female,,%,,,,15 to 19 years old
+Guinea,GN,GIN,324,adolescent girls with any anaemia,2012,47.1,Female,,%,,,,15 to 19 years old
+Guinea,GN,GIN,324,adolescent girls with any anaemia,2018,47.1,Female,,%,,,,15 to 19 years old
+Guyana,GY,GUY,328,adolescent girls with any anaemia,2009,34.1,Female,,%,,,,15 to 19 years old
+Haiti,HT,HTI,332,adolescent girls with any anaemia,2012,55.5,Female,,%,,,,15 to 19 years old
+Haiti,HT,HTI,332,adolescent girls with any anaemia,2016,53.1,Female,,%,,,,15 to 19 years old
+Honduras,HN,HND,340,adolescent girls with any anaemia,2005,16.8,Female,,%,,,,15 to 19 years old
+Honduras,HN,HND,340,adolescent girls with any anaemia,2011,12.5,Female,,%,,,,15 to 19 years old
+India,IN,IND,356,adolescent girls with any anaemia,2015,54.1,Female,,%,,,,15 to 19 years old
+India,IN,IND,356,adolescent girls with any anaemia,2020,59.1,Female,,%,,,,15 to 19 years old
+Jordan,JO,JOR,400,adolescent girls with any anaemia,2012,25.3,Female,,%,,,,15 to 19 years old
+Jordan,JO,JOR,400,adolescent girls with any anaemia,2017,43.1,Female,,%,,,,15 to 19 years old
+Lesotho,LS,LSO,426,adolescent girls with any anaemia,2009,21.3,Female,,%,,,,15 to 19 years old
+Lesotho,LS,LSO,426,adolescent girls with any anaemia,2014,24.1,Female,,%,,,,15 to 19 years old
+Liberia,LR,LBR,430,adolescent girls with any anaemia,2019,55.1,Female,,%,,,,15 to 19 years old
+Malawi,MW,MWI,454,adolescent girls with any anaemia,2010,28.6,Female,,%,,,,15 to 19 years old
+Malawi,MW,MWI,454,adolescent girls with any anaemia,2015,35.3,Female,,%,,,,15 to 19 years old
+Maldives,MV,MDV,462,adolescent girls with any anaemia,2016,60,Female,,%,,,,15 to 19 years old
+Mali,ML,MLI,466,adolescent girls with any anaemia,2012,50.8,Female,,%,,,,15 to 19 years old
+Mali,ML,MLI,466,adolescent girls with any anaemia,2018,65.4,Female,,%,,,,15 to 19 years old
+Mauritania,MR,MRT,478,adolescent girls with any anaemia,2020,63.3,Female,,%,,,,15 to 19 years old
+Mozambique,MZ,MOZ,508,adolescent girls with any anaemia,2011,54.9,Female,,%,,,,15 to 19 years old
+Myanmar,MM,MMR,104,adolescent girls with any anaemia,2016,47.5,Female,,%,,,,15 to 19 years old
+Burma,MM,MMR,104,adolescent girls with any anaemia,2016,47.5,Female,,%,,,,15 to 19 years old
+Namibia,,NAM,516,adolescent girls with any anaemia,2013,19.1,Female,,%,,,,15 to 19 years old
+Nepal,NP,NPL,524,adolescent girls with any anaemia,2011,38.5,Female,,%,,,,15 to 19 years old
+Nepal,NP,NPL,524,adolescent girls with any anaemia,2016,43.6,Female,,%,,,,15 to 19 years old
+Nicaragua,NI,NIC,558,adolescent girls with any anaemia,2006,46.7,Female,,%,,,,15 to 19 years old
+Nicaragua,NI,NIC,558,adolescent girls with any anaemia,2012,46,Female,,%,,,,15 to 19 years old
+Nigeria,NG,NGA,566,adolescent girls with any anaemia,2018,60.5,Female,,%,,,,15 to 19 years old
+Peru,PE,PER,604,adolescent girls with any anaemia,2011,16.9,Female,,%,,,,15 to 19 years old
+Peru,PE,PER,604,adolescent girls with any anaemia,2012,17.2,Female,,%,,,,15 to 19 years old
+"Moldova, Republic of",MD,MDA,498,adolescent girls with any anaemia,2008,35.1,Female,,%,,,,15 to 19 years old
+"Moldova, Republic of",MD,MDA,498,adolescent girls with any anaemia,2021,27.8,Female,,%,,,,15 to 19 years old
+Rwanda,RW,RWA,646,adolescent girls with any anaemia,2015,18.8,Female,,%,,,,15 to 19 years old
+Rwanda,RW,RWA,646,adolescent girls with any anaemia,2019,14.7,Female,,%,,,,15 to 19 years old
+Sao Tome and Principe,ST,STP,678,adolescent girls with any anaemia,2008,51.4,Female,,%,,,,15 to 19 years old
+Senegal,SN,SEN,686,adolescent girls with any anaemia,2010,55.5,Female,,%,,,,15 to 19 years old
+Senegal,SN,SEN,686,adolescent girls with any anaemia,2017,57.2,Female,,%,,,,15 to 19 years old
+Sierra Leone,SL,SLE,694,adolescent girls with any anaemia,2013,49.5,Female,,%,,,,15 to 19 years old
+Sierra Leone,SL,SLE,694,adolescent girls with any anaemia,2019,49.4,Female,,%,,,,15 to 19 years old
+South Africa,ZA,ZAF,710,adolescent girls with any anaemia,2016,33.9,Female,,%,,,,15 to 19 years old
+Tajikistan,TJ,TJK,762,adolescent girls with any anaemia,2017,33.3,Female,,%,,,,15 to 19 years old
+Timor-Leste,TL,TLS,626,adolescent girls with any anaemia,2009,21.5,Female,,%,,,,15 to 19 years old
+Timor-Leste,TL,TLS,626,adolescent girls with any anaemia,2016,20.9,Female,,%,,,,15 to 19 years old
+Togo,TG,TGO,768,adolescent girls with any anaemia,2013,54.7,Female,,%,,,,15 to 19 years old
+Turkmenistan,TM,TKM,795,adolescent girls with any anaemia,2000,37.6,Female,,%,,,,15 to 19 years old
+Uganda,UG,UGA,800,adolescent girls with any anaemia,2011,18.9,Female,,%,,,,15 to 19 years old
+Uganda,UG,UGA,800,adolescent girls with any anaemia,2016,32.9,Female,,%,,,,15 to 19 years old
+"Tanzania, United Republic of",TZ,TZA,834,adolescent girls with any anaemia,2010,42.2,Female,,%,,,,15 to 19 years old
+"Tanzania, United Republic of",TZ,TZA,834,adolescent girls with any anaemia,2015,47.3,Female,,%,,,,15 to 19 years old
+Yemen,YE,YEM,887,adolescent girls with any anaemia,2013,68.2,Female,,%,,,,15 to 19 years old
+Zambia,ZM,ZMB,894,adolescent girls with any anaemia,2018,33.4,Female,,%,,,,15 to 19 years old
+Zimbabwe,ZW,ZWE,716,adolescent girls with any anaemia,2010,25.7,Female,,%,,,,15 to 19 years old
+Zimbabwe,ZW,ZWE,716,adolescent girls with any anaemia,2015,26.5,Female,,%,,,,15 to 19 years old
