@@ -91,7 +91,7 @@ timeseries_plot_1 <- data_join_Continents %>%
                                 "Africa" = "red",
                                 "Americas" ="orange",
                                 "Oceania" = "green")) + 
-  labs(x = "Life Expectancy", y = "Year", title = "Evolution of Life Expectancy") +
+  labs(x = "Year", y = "Life Expectancy", title = "Evolution of Life Expectancy") +
   theme_classic() + 
   theme(text = element_text(family = "Times New Roman"))
 
